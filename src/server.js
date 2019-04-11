@@ -13,7 +13,7 @@ const io = require("socket.io")(server);
 //conexao em tempo real socket
 io.on("connection", socket => {
   console.log("ok");
-  socket.on("connectionRoom", box => {
+  socket.on("connectRoom", box => {
     socket.join(box);
   });
 });
